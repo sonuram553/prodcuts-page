@@ -1,0 +1,9 @@
+<button mat-raised-button color="primary" (click)="openDialog()">
+  Add Product
+</button>
+<mat-divider></mat-divider>
+<app-product-item
+  *ngFor="let product of products; let index = index"
+  [product]="product"
+  [index]="index"
+></app-product-item>

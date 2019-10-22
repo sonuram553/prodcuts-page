@@ -1,0 +1,31 @@
+<section>
+  <h2>{{ product.productName }}{{ index }}</h2>
+  <p>{{ product.inStock ? "In Stock" : "Not Available" }}</p>
+  <span>
+    S {{product.sizes.s}}
+  </span>
+  <span>
+    M {{product.sizes.m}}
+  </span>
+  <span>
+    L {{product.sizes.l}}
+  </span>
+  <span>
+    XL {{product.sizes.xl}}
+  </span>
+
+  <mat-divider></mat-divider>
+
+  <button
+    mat-flat-button
+    color="warn"
+    (click)="onDelete()"
+    [disabled]="slider.checked"
+  >
+    Delete
+  </button>
+
+  <button mat-flat-button [disabled]="slider.checked">Edit</button>
+
+  <mat-slide-toggle #slider></mat-slide-toggle>
+</section>
