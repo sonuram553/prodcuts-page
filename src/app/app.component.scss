@@ -1,4 +1,17 @@
-main{
+main {
+  width: 100%;
+  margin: 50px auto 20px;
+  padding: 0 10px 10px;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media (min-width: 950px) {
+  main {
     width: 50%;
-    margin: 50px auto 20px;
+  }
 }
